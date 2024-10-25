@@ -1,7 +1,10 @@
 <nav>
     <ul>
-      {% for item in site.navigation %}
-        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+      {% for item in navigation_pages %}
+        {% if item.navigation_weight %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
