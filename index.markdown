@@ -11,4 +11,5 @@ navigation_weight: 1
 
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+{{ post.preamble }}
 {% endfor %}

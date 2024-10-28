@@ -20,6 +20,7 @@
 
 title: Damon's Blog
 email: me@shruubi.io
+author: Damon
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my blog! I write about things I find interesting, and I hope you do too.
 baseurl: "" # the subpath of your site, e.g. /blog
