@@ -3,6 +3,7 @@ layout: post
 title:  "Learning Haskell/Functional Programming"
 date:   2024-10-28 15:48:00 +1000
 categories: haskell fp
+tags: ["haskell", "fp", "notes"]
 ---
 
 # Learning Haskell/Functional Programming
