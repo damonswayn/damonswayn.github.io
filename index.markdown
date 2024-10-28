@@ -10,6 +10,5 @@ navigation_weight: 1
 ## Posts
 
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
-{{ post.preamble }}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}<span style="display: block; color: #666; font-style: italic;">{{ post.preamble }}</span>
 {% endfor %}
