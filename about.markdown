@@ -5,15 +5,18 @@ permalink: /about/
 navigation_weight: 2
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## About Me
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Damon is a seasoned software engineer and engineering leader with a decade of expertise in crafting highly scalable systems across the
+entire technology stack. He has a proven track record in project management, adept at leading agile teams, and skilled in engaging with customers
+and stakeholders to deliver tangible value. Emphasizing a coaching approach infused with empathy and trust, I strive to foster collaborative and
+efficient teams. My philosophy centers around simplicity, locality, and testability in software engineering practices.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Things that interest me
 
-
-[jekyll-organization]: https://github.com/jekyll
+- Observability engineering
+- Test-driven development
+- Cloud architecture
+- Functional programming
+- History of computing and software
+- Building solutions to real problems
