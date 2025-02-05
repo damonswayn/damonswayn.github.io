@@ -7,10 +7,11 @@ navigation_weight: 2
 
 ## About Me
 
-Damon is a seasoned software engineer and engineering leader with a decade of expertise in crafting highly scalable systems across the
-entire technology stack. He has a proven track record in project management, adept at leading agile teams, and skilled in engaging with customers
-and stakeholders to deliver tangible value. Emphasizing a coaching approach infused with empathy and trust, I strive to foster collaborative and
-efficient teams. My philosophy centers around simplicity, locality, and testability in software engineering practices.
+Damon is a seasoned software engineer and engineering leader with over a decade of experience building highly scalable systems across the full technology stack. With a strong background in project management, he excels at leading agile teams, driving innovation, and collaborating with customers and stakeholders to deliver real value.
+
+Passionate about fostering high-performing teams, Damon takes a coaching approach rooted in empathy, trust, and continuous improvement. He believes that great software is built on simplicity, locality, and testability—principles that guide his work and leadership style.
+
+Whether architecting robust solutions, mentoring engineers, or refining development processes, Damon is committed to creating technology that is both impactful and sustainable.
 
 ## Things that interest me
 
