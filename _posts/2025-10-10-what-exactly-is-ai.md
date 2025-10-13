@@ -7,19 +7,14 @@ tags: ["ai", "llm"]
 preamble: "A longform post about my understanding of how AI works and what the future of AI may be."
 ---
 
-# What Exactly is AI?
-
 AI is obviously the hot technology to write about. Billions of dollars of investment and numerous people extolling it’s virtues, talking about how it will change the world, render humans obsolete in many ways or just selling snake oil to get a slice of the money flying around right now.
 
 I’m not going to either shit on AI or tell you how great it is, too many people do that as it is right now, instead I’d rather talk about how AI technology works so that we can better understand why it does what it does and perhaps better understand what AI is currently capable of.
 
 <aside>
-📓
+<p>📓 Throughout this article I tend to use AI and LLM interchangeably. Truthfully, they are not entirely interchangeable terms as LLM’s are only one type of AI, with other types like computer vision, reinforcement learning and symbolic systems do not use the transformer model and aren’t Large-Language Models.</p>
 
-*Throughout this article I tend to use AI and LLM interchangeably. Truthfully, they are not entirely interchangeable terms as LLM’s are only one type of AI, with other types like computer vision, reinforcement learning and symbolic systems do not use the transformer model and aren’t Large-Language Models.*
-
-*The reason I use them interchangeably is because I am referring to the current offerings from major AI companies which are focused on developing LLM’s as their primary product offering and the overall discussion in this post is specific to LLM’s.*
-
+<p>The reason I use them interchangeably is because I am referring to the current offerings from major AI companies which are focused on developing LLM’s as their primary product offering and the overall discussion in this post is specific to LLM’s.*</p>
 </aside>
 
 ## Is ChatGPT going to rise up and destroy the world with terminators? Can Gemini feel? Does Grok dream?
@@ -27,10 +22,7 @@ I’m not going to either shit on AI or tell you how great it is, too many peopl
 The answer to all these questions, thankfully, is no. This is due to the fact that the current technology around AI’s is what is called a Large Language Model (LLM). In simple terms, when you ask your AI a question it gives you an answer by essentially using a massive database of written content and mathematics to generate a best guess at the next word in the response. Effectively, the AI will use math to continuously generate the next word until you have an answer.
 
 <aside>
-📓
-
-*LLM’s don’t actually query a database to generate their responses as we will see below as we talk about how they work, but for the purposes of the broad overview I am painting here, likening it to a database speaks more to the large corpus of data that LLM’s are trained on.*
-
+📓 LLM’s don’t actually query a database to generate their responses as we will see below as we talk about how they work, but for the purposes of the broad overview I am painting here, likening it to a database speaks more to the large corpus of data that LLM’s are trained on.*
 </aside>
 
 Now, this is a somewhat simplified description of how an LLM works, but I think illustrates that AI is not any kind of sentient super-AI, but rather, a really cool, super fancy auto-complete.
@@ -49,10 +41,7 @@ The AI will happily generate an image of a wristwatch, but it will not be pointi
 Now, of course if someone provided a whole bunch of training data to the AI to teach it how a watch looks like and how a watch looks at all sorts of different times, then it can use that training data to guess at what the pixels should look like to get close to that.
 
 <aside>
-📓
-
-*Over time, examples like this will improve as companies improve their models. From what I’ve been led to believe, models like DALL-E 3 can get times on watches correct now, most likely due to improved training alongside explicit constraints and/or fine-tuning.*
-
+📓 Over time, examples like this will improve as companies improve their models. From what I’ve been led to believe, models like DALL-E 3 can get times on watches correct now, most likely due to improved training alongside explicit constraints and/or fine-tuning.*
 </aside>
 
 ## Ok, so how does that work then?
@@ -60,10 +49,7 @@ Now, of course if someone provided a whole bunch of training data to the AI to t
 So first of all you need data. Like, **A LOT** of data. Companies like OpenAI, Gemini, Claude etc have massive data ingestion pipelines that basically slurp up as much of the open internet as possible. This data is used to train the AI on what words relate to what other words.
 
 <aside>
-⚠️
-
-*Web-crawling used to be solely the domain of search engines like Google etc to build up their search database, however with so many AI’s ingesting data at such a high rate, many public-facing websites have had their web-hosting costs skyrocket because of the sheer number of AI ingestion engines pulling their data and using it to train their AI’s.*
-
+⚠️ Web-crawling used to be solely the domain of search engines like Google etc to build up their search database, however with so many AI’s ingesting data at such a high rate, many public-facing websites have had their web-hosting costs skyrocket because of the sheer number of AI ingestion engines pulling their data and using it to train their AI’s.
 </aside>
 
 Now, because our LLM is a computer, it doesn’t understand language, so while we have this dataset, we need to convert it to a language that a computer does understand and a language that we can use mathematics on to achieve the outcome we want (give us the predicted next word).
@@ -73,10 +59,7 @@ Now, because our LLM is a computer, it doesn’t understand language, so while w
 Language is complex, and turning that language into a computable state is also complex, hence we begin by tokenizing our input. Tokenization basically involves taking the words in the data and breaking them into sub-words. For example, Unhappiness might be broken down into “Un” and “happiness” as two separate tokens.
 
 <aside>
-⚠️
-
-*Tokenization does consider the linguistic meaning of subwords, but rather focuses on splitting words into statistically common subunits. If you look below at the Antidisestablishmentarianism example below you can see that more clearly than the Unhappiness example.*
-
+⚠️ Tokenization does consider the linguistic meaning of subwords, but rather focuses on splitting words into statistically common subunits. If you look below at the Antidisestablishmentarianism example below you can see that more clearly than the Unhappiness example.
 </aside>
 
 When you hear AI companies talk about “vocab size”, what they are talking about is the number of potentially different tokens the AI handles. For example, if a company says their vocab size is 50k tokens, then that means that their AI will take whatever you write into it and that will be broken down into one of 50,000 different words, subwords, characters etc.
@@ -104,7 +87,7 @@ So our tokens right now are still just words and subwords (and maybe letters), b
 
 We run through our lookup table until we find the entry for number **1000**, and we find this really long collection of weird numbers that looks something like
 
-```php
+```json
 [0.12, -0.44, 0.07, ...]
 ```
 
@@ -143,17 +126,15 @@ Now, I’ve been referring to these calculators a lot up until now, so lets try 
 In the field of AI people commonly talk of “neural nets”, basically the idea is that we create a computer simulation of neurons and their interconnectedness with the end goal of simulating the human brain. Each time I refer to a calculator, what I am referring to is a simulated neuron. In a neural network we build up **layers** of these neurons with each neuron in one layer having a connection to every neuron in the layer below it. When AI companies talk about the number of **parameters** that their AI has, that is the total number of connections across the entire network plus the number of biases.
 
 <aside>
-⚠️
+<p>⚠️ Interesting side-note about layers, different companies and research papers count the number of layers differently. The reason is whether or not the company/writer counts the input layer as an actual layer or not. The input layer while technically a layer, does not have any trainable weights associated with it, therefore in a hypothetical 3-layer network you would have the following:</p>
+<ul>
+	<li>Input layer</li>
+	<li>Hidden layer #1</li>
+	<li>Hidden layer #2</li>
+	<li>Output layer</li>
+</ul>
 
-*Interesting side-note about layers, different companies and research papers count the number of layers differently. The reason is whether or not the company/writer counts the input layer as an actual layer or not. The input layer while technically a layer, does not have any trainable weights associated with it, therefore in a hypothetical 3-layer network you would have the following:*
-
-- *Input layer*
-- *Hidden layer #1*
-- *Hidden layer #2*
-- *Output layer*
-
-*As only Hidden layer #1, Hidden layer #2 and Output Layer have trainable weights.*
-
+<p>As only Hidden layer #1, Hidden layer #2 and Output Layer have trainable weights.</p>
 </aside>
 
 Each neuron continuously outputs a calculated value (called the *activation value*). The larger the activation value is, the more “active” or more impact it has on further layers, and subsequently the lower the value, the less impact it has on further layers.
@@ -195,10 +176,7 @@ Some other systems build in special punctuation or token sequences, repetition d
 As ChatGPT likes to say, “you’ve touched on the core question”. As of current writing the answer is that we don’t really know, but we have some theories.
 
 <aside>
-📓
-
-*Ok, so a more accurate answer is that we do know how they work in terms of understanding the mechanisms by which an LLM can do what it does (this article seems a pretty good argument in that direction), but what we don’t understand is how LLM’s take these mechanisms and display “emergent behaviour”.*
-
+📓 Ok, so a more accurate answer is that we do know how they work in terms of understanding the mechanisms by which an LLM can do what it does (this article seems a pretty good argument in that direction), but what we don’t understand is how LLM’s take these mechanisms and display “emergent behaviour”.
 </aside>
 
 The reason we don’t really know is that once our AI is trained, it is almost impossible to properly understand all the different weights, how the neurons react to the weights, how and why they modify values because of the sheer number of values and variables that go into the calculations, which leads many people to describe the network of neurons as a black box.
@@ -234,10 +212,7 @@ Graphics cards work by having highly specialized chips that are well suited to p
 AI companies however have figured out that these chips because of their highly concurrent and powerful computation chips can be repurposed so that instead of calculating pixels you can calculate complex formulae in the same highly concurrent manner. As such, rather than using traditional CPU’s for training AI, companies are building massive computation arrays out of graphics cards and using their chips to vastly improve the training time and throughput of their AI models.
 
 <aside>
-📓
-
-*Once Nvidia realized the market available to them, they began producing specialized AI products, both so they could capitalize on people buying their products without all those pesky advanced graphics features getting in the way, but also because the consumer market was being hit with massive graphics card shortages due to all the people buying up graphics cards for AI work.*
-
+📓 Once Nvidia realized the market available to them, they began producing specialized AI products, both so they could capitalize on people buying their products without all those pesky advanced graphics features getting in the way, but also because the consumer market was being hit with massive graphics card shortages due to all the people buying up graphics cards for AI work.
 </aside>
 
 ## So what does the future of AI look like?
