@@ -2,7 +2,7 @@
 layout: post
 title:  "What Exactly is AI?"
 date:   2025-10-10 12:27:00 +1000
-categories: ai llm
+categories: ["ai", "llm"]
 tags: ["ai", "llm"]
 preamble: "A longform post about my understanding of how AI works and what the future of AI may be."
 ---

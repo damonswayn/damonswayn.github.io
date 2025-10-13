@@ -2,7 +2,7 @@
 layout: post
 title:  "Learning Haskell/Functional Programming"
 date:   2024-10-28 15:48:00 +1000
-categories: haskell fp
+categories: ["haskell", "fp"]
 tags: ["haskell", "fp", "notes"]
 preamble: "A collection of notes and thoughts I went through while attempting to learn Haskell, and some examples of concepts in more familiar languages."
 ---
