@@ -36,7 +36,7 @@ The AI will happily generate an image of a wristwatch, but it will not be pointi
 
 *Below is what I got when I gave ChatGPT that exact prompt.*
 
-![ChatGPT Image Oct 2, 2025, 04_41_26 PM.png](What%20exactly%20is%20AI%20280a4215bcdd80c5ae25e2f8c3fbf7e2/ChatGPT_Image_Oct_2_2025_04_41_26_PM.png)
+![ChatGPT Image Oct 2, 2025, 04_41_26 PM.png](https://i.ibb.co/23MDys77/Chat-GPT-Image-Oct-2-2025-04-41-26-PM.png)
 
 Now, of course if someone provided a whole bunch of training data to the AI to teach it how a watch looks like and how a watch looks at all sorts of different times, then it can use that training data to guess at what the pixels should look like to get close to that.
 
@@ -95,7 +95,7 @@ This is called a vector, it is a mathematical concept which allows us to represe
 
 Vectors are special lists in that you can use them to represent some point on a graph, for example if we had the vector of [2, 3], then our point is 2 across and 3 up, like the below (terribly) drawn example.
 
-![vector.jpg](What%20exactly%20is%20AI%20280a4215bcdd80c5ae25e2f8c3fbf7e2/vector.jpg)
+![vector.jpg](https://i.ibb.co/ynDNSqh0/vector.jpg)
 
 This example is easy when there are only two numbers in our vector, but much harder to draw when our vector has, for example, 1,024 numbers in it. Luckily, neither I nor the AI have to actually draw this vector on a graph, but rather, simply perform maths on it, something computers are exceedingly good at.
 
