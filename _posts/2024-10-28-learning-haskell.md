@@ -142,13 +142,10 @@ var mappedX = x.map((a) => a + 5);
 In this case, `fmap` in Haskell and `map` in Javascript are the same.
 
 <aside>
-💡
+<p>💡 The reason Haskell has both `fmap` and `map` is because `map` is designed only to work with lists and as such, its error message will report an error about lists which the language designers thought was much easier to understand for beginners. Functionally, `fmap` and `map` are equivalent but `fmap` is the generalised version.</p>
 
-The reason Haskell has both `fmap` and `map` is because `map` is designed only to work with lists and as such, its error message will report an error about lists which the language designers thought was much easier to understand for beginners. Functionally, `fmap` and `map` are equivalent but `fmap` is the generalised version.
-
-> *You might ask why we need a separate `map` function. Why not just do away with the current list-only `map` function, and rename `fmap` to `map` instead? Well, that’s a good question. The usual argument is that someone just learning Haskell, when using `map` incorrectly, would much rather see an error about lists than about `Functor`.*
-**Source:** **[https://wiki.haskell.org/Typeclassopedia#Functor](https://wiki.haskell.org/Typeclassopedia#Functor)
-> 
+<p>You might ask why we need a separate `map` function. Why not just do away with the current list-only `map` function, and rename `fmap` to `map` instead? Well, that’s a good question. The usual argument is that someone just learning Haskell, when using `map` incorrectly, would much rather see an error about lists than about `Functor`.
+<a href="https://wiki.haskell.org/Typeclassopedia#Functor">Source</a></p>
 </aside>
 
 ## Monads
@@ -212,10 +209,7 @@ do {
 ```
 
 <aside>
-💡
-
-*the curly braces and the semicolons are optional when the indentation rules are observed*
-
+<p>💡 the curly braces and the semicolons are optional when the indentation rules are observed</p>
 </aside>
 
 ## So what are these containers?
