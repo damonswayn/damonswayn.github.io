@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Just because AI can, doesn’t mean AI should."
+date:   2026-02-22 16:00:00 +1000
+categories: ["ai", "llm"]
+tags: ["ai", "llm"]
+preamble: "Thoughts on responsible business investment in an AI world."
+---
+
+Two of my favourite books are The Phoenix Project and The Unicorn Project. Partly because I deeply identify with the poor beleaguered dev team trying to do their best under the crushing weight of ridiculous delivery promises made by people whose primary skill is getting what they want through creative truth-telling. But also because of the lessons buried in the chaos.
+
+One that stuck with me more than I expected was the idea of core competency. Simply put: don't invest in building your own software and infrastructure for things that aren't core to how your business makes money. The books frame it around software, but the principle applies everywhere.
+
+I think this lesson matters even more now that LLMs have dropped the cost of building things internally. Sure, Sue in HR can use Claude to build an employee review app. It might even be a decent one. But is the total cost of having someone build it, maintain it, run it, and improve it actually less than a CultureAmp subscription? Is paying Sue's salary plus the few IT folks who get volun-told into supporting her system really the best use of that money when someone else's entire business model is doing exactly that, at scale, for less?
+
+Here's where it gets interesting though. There may be a future where the answer to all of those questions is yes. But I'd argue that by the time it's genuinely cheaper to build and maintain every internal tool in-house with AI, we're probably at the point where LLMs are capable enough to start replacing human employees outright. And at that stage, the economics would make it hard to justify not doing so. Which means we'd have a much bigger conversation on our hands than software licensing costs.
+
+None of this is to say the SaaS market won't get harder. The barrier to standing up a competitive product in a niche is shrinking fast. But what I am saying is that as we move into this LLM-powered future, we should do so with a bit of long-term fiscal responsibility. Just because AI can doesn't always mean AI should, especially when it comes to your core competencies.
